@@ -1,0 +1,17 @@
+identity:
+  author: ykr
+  name: sql_executor
+  label:
+    en_US: sql_executor
+    zh_Hans: sql_executor
+    pt_BR: sql_executor
+  description:
+    en_US: execute mysql sql safely
+    zh_Hans: execute mysql sql safely
+    pt_BR: execute mysql sql safely
+  icon: icon.svg
+tools:
+  - tools/sql_executor.yaml
+extra:
+  python:
+    source: provider/sql_executor.py

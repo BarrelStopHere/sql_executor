@@ -1,0 +1,95 @@
+identity:
+  name: sql_executor
+  author: ykr
+  label:
+    en_US: sql_executor
+    zh_Hans: sql_executor
+    pt_BR: sql_executor
+description:
+  human:
+    en_US: execute mysql sql safely
+    zh_Hans: execute mysql sql safely
+    pt_BR: execute mysql sql safely
+  llm: execute mysql sql safely
+parameters:
+  - name: sql
+    type: string
+    required: true
+    label:
+      en_US: sql string
+      zh_Hans: 查询语句
+      pt_BR: sql string
+    human_description:
+      en_US: execute mysql sql safely
+      zh_Hans: execute mysql sql safely
+      pt_BR: execute mysql sql safely
+    llm_description: execute mysql sql safely
+    form: llm
+  - name: host
+    type: string
+    required: true
+    form: llm
+    label:
+      en_US: Database ip/host
+      zh_Hans: 数据库IP/域名
+      pt_BR: Database ip/host
+    human_description:
+      en_US: Database ip/host
+      zh_Hans: 数据库IP/域名
+      pt_BR: Database ip/host
+    llm_description: Database ip/host
+  - name: port
+    type: number
+    required: true
+    form: llm
+    label:
+      en_US: Database port
+      zh_Hans: 数据库端口
+      pt_BR: Database port
+    human_description:
+      en_US: Database port
+      zh_Hans: 数据库端口
+      pt_BR: Database port
+    llm_description: Database port
+  - name: db_name
+    type: string
+    required: true
+    form: llm
+    label:
+      en_US: Database name
+      zh_Hans: 数据库名称
+      pt_BR: Database name
+    human_description:
+      en_US: Database name
+      zh_Hans: 数据库名称
+      pt_BR: Database name
+    llm_description: Database name
+  - name: username
+    type: string
+    required: true
+    form: llm
+    label:
+      en_US: Username
+      zh_Hans: 用户名
+      pt_BR: Username
+    human_description:
+      en_US: Username
+      zh_Hans: 用户名
+      pt_BR: Username
+    llm_description: Username
+  - name: password
+    type: secret-input
+    required: true
+    form: llm
+    label:
+      en_US: Password
+      zh_Hans: 密码
+      pt_BR: Password
+    human_description:
+      en_US: Password
+      zh_Hans: 密码
+      pt_BR: Password
+    llm_description: Password
+extra:
+  python:
+    source: tools/sql_executor.py

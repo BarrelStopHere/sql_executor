@@ -1,0 +1,40 @@
+version: 0.0.1
+type: plugin
+author: ykr
+name: sql_executor
+label:
+  en_US: sql_executor
+  ja_JP: sql_executor
+  zh_Hans: sql_executor
+  pt_BR: sql_executor
+description:
+  en_US: execute mysql sql safely
+  ja_JP: execute mysql sql safely
+  zh_Hans: execute mysql sql safely
+  pt_BR: execute mysql sql safely
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    app:
+      enabled: true
+    storage:
+      enabled: true
+      size: 1048576000
+plugins:
+  tools:
+    - provider/sql_executor.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2025-04-16T14:47:38.0290495+08:00
+privacy: PRIVACY.md
+verified: false
