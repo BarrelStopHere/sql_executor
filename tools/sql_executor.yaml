@@ -104,6 +104,19 @@ parameters:
     llm_description: result_format
     form: form
     default: json
+    options:
+      - label:
+          en_US: JSON
+          zh_Hans: JSON
+        value: json
+      - label:
+          en_US: TEXT
+          zh_Hans: TEXT
+        value: text
+      - label:
+          en_US: CSV
+          zh_Hans: CSV
+        value: csv
 extra:
   python:
     source: tools/sql_executor.py
