@@ -90,6 +90,20 @@ parameters:
       zh_Hans: 密码
       pt_BR: Password
     llm_description: Password
+  - name: result_format
+    type: select
+    required: false
+    label:
+      en_US: result_format
+      zh_Hans: 返回数据格式
+      pt_BR: result_format
+    human_description:
+      en_US: result_format
+      zh_Hans: 返回数据格式
+      pt_BR: result_format
+    llm_description: result_format
+    form: form
+    default: json
 extra:
   python:
     source: tools/sql_executor.py
